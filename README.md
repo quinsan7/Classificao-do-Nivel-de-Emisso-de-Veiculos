@@ -59,7 +59,7 @@ A primeira célula lista os arquivos de `/kaggle/input` para confirmar que o dat
 | 15 | Matriz de confusão |
 | 16 | Precisão, recall e F1-Score |
 | 17 | Teste de vazamento de dados |
-| 18 | Modelo completo sem a coluna de CO2 (GridSearchCV, matriz de confusão e recall) |
+| 18 | Modelo completo só com as 13 variáveis de condição, sem nenhuma coluna de emissão (GridSearchCV, matriz de confusão e recall) |
 | 19 | Por que o SVM só com CO2 não chega a 100% (os 4 erros) |
 | 20 | Conclusão |
 
@@ -78,7 +78,8 @@ A primeira célula lista os arquivos de `/kaggle/input` para confirmar que o dat
 | SVM com todas as variáveis | **96,90%** (validação cruzada: 96,52%) |
 | Regra manual de 2 cortes em CO2 (sem treino) | 100,00% |
 | SVM só com CO2 | 99,80% |
-| SVM sem CO2 (modelo completo, seção 18) | 44,15% |
+| SVM sem CO2 | 44,15% |
+| SVM só com as 13 variáveis de condição, sem colunas de emissão (seção 18) | 44,20% |
 | Baseline (sempre prever `High`) | 44,20% |
 
 Desempenho por nível (conjunto de teste, 2.000 registros):
